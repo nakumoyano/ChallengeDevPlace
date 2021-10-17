@@ -1,0 +1,278 @@
+:root{
+    --color-dark: #15181f;
+    --color-dark-x: #2d343f;
+    --color-dark-xx: #1f232b;
+    --color-light: #ffffff;
+    --color-grey: #f5f6f8;
+}
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    height: 100%;
+}
+
+body {
+    background: #000428; 
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  
+    background: linear-gradient(to right, #004e92, #000428); 
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+hr{
+    background-color: aliceblue;
+    width: 80%;
+}
+
+/* ------------------------------------- */
+
+/* Navbar*/
+
+.nav-link, .navbar-brand{
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.nav-link:hover, .navbar-brand:hover{
+    color: #81b4e0;
+}
+
+.navbar-toggler{
+    color: white;
+    border: 1px solid white;
+}
+.collapse{
+    margin-right: 50px;
+    color: #dedede;
+}
+
+/* ----------------------------------------- */
+
+/* Home */
+
+.btn2{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn2:hover{
+    background-color: rgb(199, 191, 191);
+    border: 1px solid;
+    color: black;
+    cursor: pointer;
+}
+
+.h2{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+/* ----------------------------------------- */
+
+/* card */
+
+#container{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin-top: 80px;
+}
+
+.card{
+    position: relative;
+    background: #eee;
+    color: #5555fa;
+    width: 250px;
+    height: 400px;
+    border-radius: 15px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+
+    /* con esto quedan al medio */
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px; 
+}
+
+.card p{
+    font-size: 20px;
+}
+
+.title{
+    font-size: 14px;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.h1{
+    font-size: 15px;
+    padding: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.title .sub-title{
+    font-size: 15px;
+}
+.price{
+    margin-top: -25px;
+    text-align: center;
+}
+
+.price h5{
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.price h5 sup{
+    font-size: 15px;
+}
+
+.price p{
+    margin-top: -135px;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+
+.option{
+    position: relative;
+    padding: 10px;
+}
+
+.option li{
+    text-align: center;
+    font-size: 12px;
+    padding: 8px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.option p{
+    font-size: 17px;
+    color: black;
+    text-align: center;
+}
+#btn{
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    outline: none;
+    border: none;
+    background: #5555fa;
+    color: #eee;
+    width: 110px;
+    height: 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+    box-shadow: 0 0 8px #0909e6;
+}
+
+.card:hover{
+    box-shadow: 0 0 0 20em inset #5555fa;
+    color: #eee;
+    transform: scale(1.1);
+}
+
+.card:hover #btn{
+    background: #eee;
+    color: #5555fa;
+}
+
+/* --------------------------------------- */
+
+/* Form Contact */
+
+.bg-light {
+    background-color: var(--color-light)!important;
+}
+
+.bg-dark {
+    background-color: var(--color-dark)!important;
+}
+
+.p-6 {
+    padding: 1rem 5rem;
+}
+
+.contact-box {
+    padding: 3rem;
+}
+
+.btn4 {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+    cursor: pointer;
+}
+
+textarea{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 87px;
+    resize: none;
+    width: 100%;
+}
+
+.btn-outline-dark {
+    border: 2px solid var(--color-dark-xx);
+}
+
+#rowno{
+    border-radius: 15px;
+    box-shadow: 12px 12px 22px grey;
+}
+
+.form-control {
+    background-color: var(--color-dark-xx);
+    border: 2px solid var(--color-dark-xx);
+    border-radius: .2rem;
+    padding: 1.5rem 1rem;
+}
+
+.register-bg {
+    background-image: url('https://www.aez-wheels.com/EN/repos/evoscripts/aez/img/8cfc54dfba81d341b2790994d104c2588954cb65/aez-forged-series-banner-1-mobile-750x810.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    border-radius: 15px;
+}
+
+.testiomonial {
+    bottom: 30px
+}
+
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .register-bg {
+        min-height: 50vh;
+    }
+}
